@@ -1,0 +1,46 @@
+body{
+    font-family: "arial", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    background-image: url("../images/Natural-Paper-Background.jpg");
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+/* .bimage {
+    background-image: url("../images/Natural-Paper-Background.jpg");
+    object-fit: cover;
+    position: fixed;
+
+} */
+/* #scz {
+    color: black;
+    text-shadow: -0.25px 0 white, 0 0.25px white, 0.25px 0 white, 0 -0.25px white;
+} */
+.navbar h1:hover {
+    color: rgb(214, 252, 206);
+    background: #3a4147;
+}
+.navbar h1 {
+    font-variant: small-caps;
+    color: green;
+}
+.nav-item:hover {
+    color: rgb(214, 252, 206);
+    background: #3a4147;
+}
+.btn-success {
+    background: green;
+    color: black;
+    /* mix-blend-mode: screen; */
+}
+.btn-success:hover {
+    color:rgb(5, 117, 13);
+    background: rgb(0, 61, 0);
+}
+.stamp {
+    padding: 5px;
+    color:black;
+    background: white;
+    mix-blend-mode: screen;
+    font-size: 2em;
+    transform: translate(-20%, -50%);
+}
