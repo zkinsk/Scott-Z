@@ -44,3 +44,12 @@ body{
     font-size: 2em;
     transform: translate(-20%, -50%);
 }
+
+.footer {
+    border-top: green 5px solid;
+}
+.footer p{
+    font-size: 8px; 
+    padding-top: 20px;
+    color: white;
+}
