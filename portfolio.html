@@ -8,8 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
             integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
@@ -18,7 +19,7 @@
     </head>
 
     <body>
-        <img class="img-fluid " src="assets/images/Cole_Mt.jpg" alt="panorama" height="100">
+        <img class="img-fluid " src="assets/images/Cole_Mt.jpg" alt="panorama">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <a class="navbar-brand" href="index.html">
                 <h1><strong>Scott Zinski</strong></h1>
@@ -37,8 +38,7 @@
             </div>
         </nav>
         <!-- contact modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -68,7 +68,7 @@
         </div>
         <!-- end of contact modal -->
         <!-- app modal -->
-        <div class="modal fade" id="porfolioModal" tabindex="-1">
+        <div class="modal fade" id="porfolioModal" tabindex="-1" aria-labelledby="portfolioModalContent" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content" id="portfolioModalContent">
 
@@ -79,12 +79,12 @@
 
         <div class="container"><!--beginning of container-->
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-8" style="margin-top: 10px">
+                <div class="col-md-8">
                     <h3>Portfolio</h3>
                 </div>
             </div>
             <!-- beginning of portfolio content -->
-            <div class="row justify-content-center" style="margin-top: 10px">
+            <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-10 contentBox">
                     <div class="row">
                         <div class="col-md-6 col-xl-4">
@@ -107,8 +107,7 @@
                         </div>
                         <div class="col-md-6 col-xl-4">
                             <div class="card mb-2">
-                                <img class="card-img-top img-fluid" src="assets/images/the-empire-strikes-back-star-wars.jpg"
-                                    alt="Card image cap" height="100%">
+                                <img class="card-img-top img-fluid" src="assets/images/the-empire-strikes-back-star-wars.jpg" alt="I am your father">
                                 <div class="card-body">
                                     <a href="https://zkinsk.github.io/unit-4-RPGgame/" target = "_blank"><h5 class="card-title">Star Wars RPG</h5></a>
                                     <p class="card-text">Pick your favorite Jedi, and do battle with 3 others.  Turn up the volume!</p>
@@ -117,41 +116,37 @@
                         </div>
                         <div class="col-md-6 col-xl-4">
                             <div class="card mb-2">
-                                <img class="card-img-top img-fluid" src="assets/images/big_Lebowski.jpg" alt="Lebowski Trivia"
-                                    height="100%">
-                                <div class="card-img-overlay">
-                                    <a href="https://zkinsk.github.io/TriviaGame/" class="btn btn-block" style="margin-top: 80%;">Lebowski
-                                        Trivia</a>
+                                <img class="card-img-top img-fluid" src="assets/images/big_Lebowski.jpg" alt="The Dude">
+                                <div class="card-body">
+                                    <a href="https://zkinsk.github.io/TriviaGame/" target = "_blank"><h5 class="card-title">Big Lebowsi Trivia</h5></a>
+                                    <p class="card-text">The Dude abides and so should you. Don't roll any gutter balls!</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-4">
                             <div class="card mb-2">
-                                <img class="card-img-top img-fluid" src="https://media.giphy.com/media/Q0bxYHaQJ88jS/giphy.gif"
-                                    alt="Card image cap" height="100%">
-                                <div class="card-img-overlay">
-                                    <a href="https://zkinsk.github.io/Giphy-HW/" class="btn btn-block" style="margin-top: 80%;">Gif
-                                        Viewer</a>
+                                <img class="card-img-top img-fluid" src="https://media.giphy.com/media/Q0bxYHaQJ88jS/giphy.gif" alt="gif">
+                                <div class="card-body">
+                                    <h5 class="card-title modalProject" data-url="https://zkinsk.github.io/Giphy-HW/">Gif Viewer</h5>
+                                    <p class="card-text">A nice teal and orange gif viewer using the Giphy API</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-4">
                             <div class="card mb-2">
-                                <img class="card-img-top img-fluid" src="assets/images/RockPaperScissors.jpg" alt="Card image cap"
-                                    height="100%">
-                                <div class="card-img-overlay">
-                                    <a href="https://zkinsk.github.io/RPS-Multiplayer/" class="btn btn-block" style="margin-top: 80%;">RPS
-                                        - MultiPlayer</a>
+                                <img class="card-img-top img-fluid" src="assets/images/RockPaperScissors.jpg" alt="Rock Paper Sissors">
+                                <div class="card-body">
+                                    <h5 class="card-title modalProject" data-url="https://zkinsk.github.io/RPS-Multiplayer/" >MultiPlayer Rock Paper Sissors</h5>
+                                    <p class="card-text">Play rock paper sissors with your best buds and chat smack while your crack some sissors</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-4">
                             <div class="card mb-2">
-                                <img class="card-img-top img-fluid" src="assets/images/biketobrew_square.png" alt="Card image cap"
-                                    height="100%">
-                                <div class="card-img-overlay">
-                                    <a href="https://camille-the-eel.github.io/ByteMe/" class="btn btn-block" style="margin-top: 80%;">Bike
-                                        to Brew</a>
+                                <img class="card-img-top img-fluid" src="assets/images/biketobrew_square.png" alt="Beer Bomber">
+                                <div class="card-body">
+                                    <h5 class="card-title modalProject" data-url = "https://zkinsk.github.io/BikeToBrew/">Bike to Brew</h5>
+                                    <p class="card-text">Find good brews near to your favorite trail, or explore both someplace else!</p>
                                 </div>
                             </div>
                         </div>
