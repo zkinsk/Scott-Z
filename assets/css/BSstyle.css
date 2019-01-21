@@ -5,16 +5,9 @@ body{
     margin: 0px;
     padding: 0px;
 }
-/* .bimage {
-    background-image: url("../images/Natural-Paper-Background.jpg");
-    object-fit: cover;
-    position: fixed;
-
-} */
-/* #scz {
-    color: black;
-    text-shadow: -0.25px 0 white, 0 0.25px white, 0.25px 0 white, 0 -0.25px white;
-} */
+.navbar {
+    border-bottom: green 5px solid;
+}
 .navbar h1:hover {
     color: rgb(214, 252, 206);
     background: #3a4147;
@@ -27,6 +20,10 @@ body{
     color: rgb(214, 252, 206);
     background: #3a4147;
 }
+
+#scootImg{
+    width: 300px;
+}
 .btn-success {
     background: green;
     color: black;
@@ -35,6 +32,10 @@ body{
 .btn-success:hover {
     color:rgb(5, 117, 13);
     background: rgb(0, 61, 0);
+}
+
+.contentBox{
+    background-color: lightgray;
 }
 .stamp {
     padding: 5px;
@@ -45,6 +46,12 @@ body{
     transform: translate(-20%, -50%);
 }
 
+.card img{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
 .footer {
     border-top: green 5px solid;
 }
@@ -52,4 +59,10 @@ body{
     font-size: 8px; 
     padding-top: 20px;
     color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    #scootImg{
+        width: 100%;
+    }
 }

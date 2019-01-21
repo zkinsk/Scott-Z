@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bootstrap Portfolio</title>
+        <title>Scott Z - Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/BSstyle.css">
     </head>
+
     <body>
         <img class="img-fluid " src="assets/images/Cole_Mt.jpg" alt="panorama" height="100">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="border-bottom: green 5px solid;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <a class="navbar-brand" href="index.html">
                 <h1><strong>Scott Zinski</strong></h1>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="btn-group float-right">
                     <a class="btn btn-success " href="portfolio.html" role="button">Portfolio</a>
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact Me</button>
-        
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="@mdo">Contact Me</button>
+
                 </div>
             </div>
         </nav>
         <!-- contact modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -59,27 +67,98 @@
             </div>
         </div>
         <!-- end of contact modal -->
+        <!-- app modal -->
         <div class="modal fade" id="porfolioModal" tabindex="-1">
-                <div class="modal-dialog" role="document">
-                        <div class="modal-content" id="portfolioModalContent">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="portfolioModalContent">
 
-                        </div>
                 </div>
+            </div>
         </div>
+        <!-- end of app modal -->
 
-        <div class="container">
+        <div class="container"><!--beginning of container-->
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-8" style="margin-top: 10px">
                     <h3>Portfolio</h3>
                 </div>
             </div>
+            <!-- beginning of portfolio content -->
             <div class="row justify-content-center" style="margin-top: 10px">
-                <div class="col-md-10" style="background: lightgrey;">
-        
-
+                <div class="col-sm-12 col-md-10 contentBox">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top img-fluid" src="assets/images/bob-ross_header.jpg" alt="Bob Ross">
+                                <div class="card-body">
+                                    <a href="https://zkinsk.github.io/Word-Guess-Game/" target = "_blank"><h5 class="card-title">Bob Ross Word Guess</h5></a>
+                                    <p class="card-text">Hangman styled word guess game with an homage to Bob Ross and his Happy Little Trees</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top img-fluid" src="assets/images/Garnet_Andradite20.jpg" alt="Crystals">
+                                <div class="card-body">
+                                    <a href="https://zkinsk.github.io/unit-4-gemgame/" target = "_blank"><h5 class="card-title">Crystals Collector</h5></a>
+                                    <p class="card-text">A funny little game that leaves you guessing as to how to match the value of four unknown crystals to a target number.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top img-fluid" src="assets/images/the-empire-strikes-back-star-wars.jpg"
+                                    alt="Card image cap" height="100%">
+                                <div class="card-body">
+                                    <a href="https://zkinsk.github.io/unit-4-RPGgame/" target = "_blank"><h5 class="card-title">Star Wars RPG</h5></a>
+                                    <p class="card-text">Pick your favorite Jedi, and do battle with 3 others.  Turn up the volume!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top img-fluid" src="assets/images/big_Lebowski.jpg" alt="Lebowski Trivia"
+                                    height="100%">
+                                <div class="card-img-overlay">
+                                    <a href="https://zkinsk.github.io/TriviaGame/" class="btn btn-block" style="margin-top: 80%;">Lebowski
+                                        Trivia</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top img-fluid" src="https://media.giphy.com/media/Q0bxYHaQJ88jS/giphy.gif"
+                                    alt="Card image cap" height="100%">
+                                <div class="card-img-overlay">
+                                    <a href="https://zkinsk.github.io/Giphy-HW/" class="btn btn-block" style="margin-top: 80%;">Gif
+                                        Viewer</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top img-fluid" src="assets/images/RockPaperScissors.jpg" alt="Card image cap"
+                                    height="100%">
+                                <div class="card-img-overlay">
+                                    <a href="https://zkinsk.github.io/RPS-Multiplayer/" class="btn btn-block" style="margin-top: 80%;">RPS
+                                        - MultiPlayer</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top img-fluid" src="assets/images/biketobrew_square.png" alt="Card image cap"
+                                    height="100%">
+                                <div class="card-img-overlay">
+                                    <a href="https://camille-the-eel.github.io/ByteMe/" class="btn btn-block" style="margin-top: 80%;">Bike
+                                        to Brew</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div><!--end of portfolio content-->
+        </div><!-- end of container -->
 
         <br>
         <footer>
@@ -87,8 +166,9 @@
                 <div class="col-md-12 text-center">
                     <p>Copyright &copy;</p>
                 </div>
-            </div>  
+            </div>
         </footer>
-    </body> 
-    <script src="assets/portolio.js"></script>
+    </body>
+    <script src="assets/portfolio.js"></script>
+
 </html>
