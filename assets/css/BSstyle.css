@@ -1,3 +1,10 @@
+/* 
+page background color: #3a4147
+content & card background color: #2d3237
+*/
+
+
+
 body{
     /* font-family: "arial", "Helvetica Neue", Arial, Helvetica, sans-serif; */
     /* background-image: url("../images/Natural-Paper-Background.jpg"); */
@@ -8,85 +15,124 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.navbar {
-    border-bottom: green 5px solid;
-}
-.navbar h1:hover {
-    color: rgb(214, 252, 206);
-    background: #3a4147;
-}
-.navbar h1 {
-    font-family: 'Roboto', sans-serif;
-    font-variant: small-caps;
-    color: green;
-}
-.nav-item:hover {
-    color: rgb(214, 252, 206);
-    background: #3a4147;
-}
-#aboutMe {
-    background-color: #2d3237;
-    border: transparent 2px solid;
-    border-radius: 5px;
-}
-#aboutMe p:first-of-type {
-    margin-top: 10px
-}
-#scootImg{
-    width: 300px;
-}
-.btn-success {
-    background: green;
-    color: black;
-}
-.btn-success:hover {
-    color:rgb(5, 117, 13);
-    background: rgb(0, 61, 0);
-}
-
-.contentBox{
-    /* background-color: lightgray; */
-    background-color: #3a4147;
-    color: rgb(213, 213, 213);
-}
-.stamp {
-    padding: 5px;
-    color:black;
-    background: white;
-    mix-blend-mode: screen;
-    font-size: 2em;
-    transform: translate(-20%, -50%);
-}
-
-/* .card img{
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-} */
-
-.card {
-    background-color: #2d3237;
-}
-
-.footer {
-    border-top: green 5px solid;
-}
-.footer p{
-    font-size: 8px; 
-    padding-top: 20px;
-    color: white;
-}
-
-/* portfolio modal */
-.modalProject{
-    cursor: pointer;
-}
-iframe{
-    height: 650px;
-}
-
-@media only screen and (max-width: 767px) {
-    #scootImg{
-        width: 100%;
+/* nabar ------------------ */
+    .navbar {
+        border-bottom: green 5px solid;
     }
-}
+    .navbar h1:hover {
+        color: rgb(214, 252, 206);
+        background: #3a4147;
+    }
+    .navbar h1 {
+        font-family: 'Roboto', sans-serif;
+        font-variant: small-caps;
+        color: green;
+    }
+    .nav-item:hover {
+        color: rgb(214, 252, 206);
+        background: #3a4147;
+    }
+/* end navbar ------------------ */
+
+/* button css --------------------- */
+    .btn-success {
+        background: green;
+        color: black;
+    }
+    .btn-success:hover {
+        color:rgb(5, 117, 13);
+        background: rgb(0, 61, 0);
+    }
+/* end button css ------------- */
+
+/* about me----------------- */
+    #aboutMe {
+        background-color: #2d3237;
+        border: transparent 2px solid;
+        border-radius: 5px;
+    }
+    #aboutMe p:first-of-type {
+        margin-top: 10px
+    }
+    #scootImg{
+        width: 300px;
+    }
+/* end about me----------------- */
+
+
+/* content box--------------- */
+    .contentBox{
+        /* background-color: lightgray; */
+        background-color: #3a4147;
+        color: rgb(213, 213, 213);
+    }
+/* end content box-------------- */
+
+/* CARD CSS ------------------*/
+
+    .card {
+        background-color: green;
+        position: relative;
+        /* width: 50%; */
+    }
+    .card-img-top {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    .card:hover {
+        background-color: #394552;
+    }
+    .card:hover .card-body {
+        opacity: 1;
+      }
+    .card-body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #2d3237;
+      }
+      .cardOverlay{
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /* text-align: center; */
+      }
+
+/* END CARD CSS -------------------*/
+
+/* footer ---------------- */
+    .footer {
+        border-top: green 5px solid;
+    }
+    .footer p{
+        font-size: 8px; 
+        padding-top: 20px;
+        color: white;
+    }
+/* end footer ------------- */
+
+/* portfolio modal --------------------*/
+    .modalProject{
+        cursor: pointer;
+    }
+    iframe{
+        height: 650px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        #scootImg{
+            width: 100%;
+        }
+    }
+/* end portfolio modal ----------------*/
