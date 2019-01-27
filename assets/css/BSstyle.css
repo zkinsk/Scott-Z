@@ -15,9 +15,16 @@ body{
     margin: 0px;
     padding: 0px;
 }
+/* cap image */
+    #capImg{
+        border-bottom: green 3px solid;
+    }
+/* end cap img */
+
 /* nabar ------------------ */
     .navbar {
-        border-bottom: green 5px solid;
+        border-bottom: green 3px solid;
+        background: #2d3237;
     }
     .navbar h1:hover {
         color: rgb(214, 252, 206);
@@ -125,7 +132,8 @@ body{
 
 /* footer ---------------- */
     .footer {
-        border-top: green 5px solid;
+        border-top: green 3px solid;
+        background-color: #2d3237;
     }
     .footer p{
         font-size: 8px; 
