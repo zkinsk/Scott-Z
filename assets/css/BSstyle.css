@@ -118,7 +118,7 @@ body{
           transform: translate(-50%, -50%);
           right: 0;
           bottom: -30%;
-          color: red;
+          color: rgb(255, 140, 0);
       }
 
 /* END CARD CSS -------------------*/
@@ -129,8 +129,15 @@ body{
     }
     .footer p{
         font-size: 8px; 
-        padding-top: 20px;
+        padding-top: 5px;
         color: white;
+    }
+
+    #socialLinks a{
+        font-size: 150%;
+        color: rgb(255, 140, 0);
+        padding: 5px 10px 0 10px;
+
     }
 /* end footer ------------- */
 
