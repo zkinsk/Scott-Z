@@ -66,6 +66,9 @@ body{
         background-color: #3a4147;
         color: rgb(213, 213, 213);
     }
+    .pageName{
+        text-align: center;
+    }
 /* end content box-------------- */
 
 /* CARD CSS ------------------*/
