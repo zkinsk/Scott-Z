@@ -32,18 +32,16 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="btn-group float-right">
                     <a class="btn btn-success " href="portfolio.html" role="button">Portfolio</a>
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal"
-                        data-whatever="@mdo">Contact Me</button>
-
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#contactModal" data-whatever="@mdo">Contact Me</button>
                 </div>
             </div>
         </nav>
         <!-- contact modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Message for Scott</h5>
+                        <h5 class="modal-title" id="contactModalLabel">Message for Scott</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -51,18 +49,18 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Your Email Address:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                            </div>
-                            <div class="form-group">
+                                <label for="sender-name" class="col-form-label">Your Name:</label>
+                                <input type="text" class="form-control" id="sender-name">
+                                <label for="sender-email" class="col-form-label">Your Email Address:</label>
+                                <input type="email" class="form-control" id="sender-email">
                                 <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                                <textarea class="form-control" id="sender-message"></textarea>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-success">Send message</button>
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                        <button type="button" class="btn btn-success" id="messageSend">Send message</button>
                     </div>
                 </div>
             </div>
@@ -232,6 +230,7 @@
             </div>
         </footer>
     </body>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
     <script src="assets/portfolio.js"></script>
 
 </html>
