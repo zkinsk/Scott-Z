@@ -72,7 +72,12 @@ body{
 /* end content box-------------- */
 
 /* CARD CSS ------------------*/
-
+    .cardCol{
+        background-color: green;
+    }
+    #liriBot{
+        background-color:
+    }
     .card {
         background-color: green;
         position: relative;
@@ -99,7 +104,7 @@ body{
         width: 100%;
         opacity: 0;
         transition: .5s ease;
-        background-color: #2d3237;
+        background-color: #2d3237b5;
       }
       .cardOverlay{
         position: absolute;
