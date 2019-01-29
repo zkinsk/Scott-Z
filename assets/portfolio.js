@@ -37,7 +37,14 @@ $("#contactModal").on("click", "#messageSend", function(){
       senderMessage: senderMessage,
     })
   })
-}
+
+  $("#portfolioButton").on("click", function(){
+    let scrollLoc = $(this).attr("data-scroll");
+    $('html, body').animate({
+      scrollTop: ($(scrollLoc).offset().top) - 320
+    }, 3000,)
+  });
+};
 
 $(document).ready(function(){
 
