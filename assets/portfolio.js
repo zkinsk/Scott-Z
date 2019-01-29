@@ -20,6 +20,7 @@ function modalMonitor(){
     $("#porfolioModal").modal();
   })
 }
+
 function clickButtons(){
 $("#contactModal").on("click", "#messageSend", function(){
     let senderName = $("#sender-name").val();
@@ -50,7 +51,7 @@ $(document).ready(function(){
 
   modalMonitor()
   clickButtons()
-  // $('[data-toggle="tooltip"]').tooltip()
   $('.gitTag').tooltip({placement: "bottom"})
+  setTimeout(function(){objectTest()}, 2000)
 // end of doc ready
 })
