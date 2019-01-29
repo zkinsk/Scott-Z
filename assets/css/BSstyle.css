@@ -53,6 +53,29 @@ body{
 /* end button css ------------- */
 
 /* about me----------------- */
+    #pageName {
+        height: 100px;
+        z-index: 50000;
+    }
+    #pageName h2{
+        background-color: white;
+        color: black;
+        /* font-size: 3vw;  */
+        font-size: 200%; 
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px 40px;
+        /* width: 100px; */
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: screen;
+        border: transparent 4px solid;
+        border-radius: 4px;
+    }
+    
     #aboutMe {
         background-color: #2d3237;
         border: transparent 2px solid;
@@ -68,15 +91,57 @@ body{
 
 
 /* content box--------------- */
+
     .contentBox{
         /* background-color: lightgray; */
         background-color: #3a4147;
         color: rgb(213, 213, 213);
     }
-    .pageName{
-        text-align: center;
-    }
 /* end content box-------------- */
+
+/* begin parrallax 1 */
+
+    #pLax-1 {
+        background-image: url(../images/Lost-Riv-Pan.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+    #pLax-1-content {
+        height: 14vw;
+    }
+/* end parallax 1 */
+
+/* begin parallax 2 */
+    #pLax-2 {
+        background-image: url(../images/pLax-2.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 40px;
+    }
+    #pLax-2-content{
+        height: 200px;
+        position: relative;
+    }
+    #pLax-2-content h2 {
+        background-color: white;
+        color: black;
+        font-size: 200%; 
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 10px 40px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        mix-blend-mode: screen;
+        border: transparent 4px solid;
+        border-radius: 4px;
+      }
+
+    /* end parallax 2 */
 
 /* CARD CSS ------------------*/
     .cardCol{
