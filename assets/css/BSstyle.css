@@ -84,6 +84,9 @@ body{
     #aboutMe p:first-of-type {
         margin-top: 10px
     }
+    #aboutMe p {
+        padding: 0 10px;
+    }
     #scootImg{
         width: 300px;
     }
