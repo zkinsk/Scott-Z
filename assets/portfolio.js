@@ -12,7 +12,7 @@ var database =firebase.database();
 var messageDB = database.ref("/messages");
 
 function modalMonitor(){
-  $(".modalProject").click(function(){
+  $("#portfolioRow").on("click", ".modalProject", function(){
     $("#portfolioModalContent").empty();
     let projUrl = $(this).attr("data-url")
     let frame = $("<iframe>").attr({"src": projUrl, "allow": "geolocation"})
@@ -20,6 +20,7 @@ function modalMonitor(){
     $("#porfolioModal").modal();
   })
 }
+
 function clickButtons(){
 $("#contactModal").on("click", "#messageSend", function(){
     let senderName = $("#sender-name").val();
@@ -47,10 +48,10 @@ $("#contactModal").on("click", "#messageSend", function(){
 };
 
 $(document).ready(function(){
-
-  modalMonitor()
-  clickButtons()
-  // $('[data-toggle="tooltip"]').tooltip()
+ drawPortolio();
+  modalMonitor();
+  clickButtons();
   $('.gitTag').tooltip({placement: "bottom"})
+  // setTimeout(function(){objectTest()}, 2000)
 // end of doc ready
 })
