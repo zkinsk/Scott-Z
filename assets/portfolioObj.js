@@ -49,7 +49,7 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/unit-4-gemgame",
     siteURL: "https://zkinsk.github.io/unit-4-gemgame/",
     mobile: false,
-    order: 20
+    order: 70
   },
   {
     name: "Bike to Brew",
@@ -58,7 +58,7 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/BikeToBrew",
     siteURL: "https://zkinsk.github.io/BikeToBrew/",
     mobile: true,
-    order: 30
+    order: 20
   },
   {
     name: "Star Wars RPG",
@@ -67,7 +67,7 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/unit-4-RPGgame",
     siteURL: "https://zkinsk.github.io/unit-4-RPGgame/",
     mobile: false,
-    order: 40
+    order: 30
   },
   {
     name: "Big Lebowski Trivia",
@@ -85,7 +85,7 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/Giphy-HW",
     siteURL: "https://zkinsk.github.io/Giphy-HW/",
     mobile: true,
-    order: 60
+    order: 40
   },
   {
     name: "MultiPlayer Rock Paper Sissors",
@@ -94,7 +94,7 @@ var portfolioArr = [
     gitURL: "assets/images/RockPaperScissors.jpg",
     siteURL: "https://zkinsk.github.io/RPS-Multiplayer/",
     mobile: true,
-    order: 70
+    order: 60
   },
   {
     name: "liriBot",
@@ -127,6 +127,7 @@ var portfolioArr = [
 
 
 function drawPortolio(){
+  portfolioArr.sort(function(a, b){return a.order - b.order})
   portfolioArr.forEach(function(portItem){
     let portCard = new PortfolioItem(portItem)
     portCard.drawCard();
