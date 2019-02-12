@@ -39,7 +39,8 @@ var portfolioArr = [
     image: "assets/images/bob-ross_header.jpg",
     gitURL: "https://github.com/zkinsk/Word-Guess-Game",
     siteURL: "https://zkinsk.github.io/Word-Guess-Game/",
-    mobile: false
+    mobile: false,
+    order: 10
   },
   {
     name: "Crystals Collector",
@@ -47,7 +48,8 @@ var portfolioArr = [
     image: "assets/images/Garnet_Andradite20.jpg",
     gitURL: "https://github.com/zkinsk/unit-4-gemgame",
     siteURL: "https://zkinsk.github.io/unit-4-gemgame/",
-    mobile: false
+    mobile: false,
+    order: 20
   },
   {
     name: "Bike to Brew",
@@ -55,7 +57,8 @@ var portfolioArr = [
     image: "assets/images/biketobrew_square.png",
     gitURL: "https://github.com/zkinsk/BikeToBrew",
     siteURL: "https://zkinsk.github.io/BikeToBrew/",
-    mobile: true
+    mobile: true,
+    order: 30
   },
   {
     name: "Star Wars RPG",
@@ -63,7 +66,8 @@ var portfolioArr = [
     image: "assets/images/the-empire-strikes-back-star-wars.jpg",
     gitURL: "https://github.com/zkinsk/unit-4-RPGgame",
     siteURL: "https://zkinsk.github.io/unit-4-RPGgame/",
-    mobile: false
+    mobile: false,
+    order: 40
   },
   {
     name: "Big Lebowski Trivia",
@@ -71,7 +75,8 @@ var portfolioArr = [
     image: "assets/images/big_Lebowski.jpg",
     gitURL: "https://github.com/zkinsk/TriviaGame",
     siteURL: "https://zkinsk.github.io/TriviaGame/",
-    mobile: false
+    mobile: false,
+    order: 50
   },
   {
     name: "Gif Viewer",
@@ -79,7 +84,8 @@ var portfolioArr = [
     image: "assets/images/mtb-Bike.gif",
     gitURL: "https://github.com/zkinsk/Giphy-HW",
     siteURL: "https://zkinsk.github.io/Giphy-HW/",
-    mobile: true
+    mobile: true,
+    order: 60
   },
   {
     name: "MultiPlayer Rock Paper Sissors",
@@ -87,7 +93,8 @@ var portfolioArr = [
     image: "assets/images/RockPaperScissors.jpg",
     gitURL: "assets/images/RockPaperScissors.jpg",
     siteURL: "https://zkinsk.github.io/RPS-Multiplayer/",
-    mobile: true
+    mobile: true,
+    order: 70
   },
   {
     name: "liriBot",
@@ -95,7 +102,8 @@ var portfolioArr = [
     image: "assets/images/siri-2.gif",
     gitURL: "https://github.com/zkinsk/liri-node-app",
     siteURL: "https://github.com/zkinsk/liri-node-app",
-    mobile: false
+    mobile: false,
+    order: 80
   },
   {
     name: "Node Word Guess",
@@ -103,15 +111,33 @@ var portfolioArr = [
     image: "assets/images/constructor_word_guess.png",
     gitURL: "https://github.com/zkinsk/Constructor-WordGuess",
     siteURL: "https://github.com/zkinsk/Constructor-WordGuess",
-    mobile: false
+    mobile: false,
+    order: 90
+  },
+  {
+    name: "bAmazon",
+    synopsis: "Definitely not Amazon online store using MySql and node.js",
+    image: "assets/images/bamazonBox.jpg",
+    gitURL: "https://github.com/zkinsk/bamazon",
+    siteURL: "https://github.com/zkinsk/bamazon",
+    mobile: false,
+    order: 100
   },
 ];
 
 
-
 function drawPortolio(){
-  for (let i in portfolioArr){
-    let portCard = new PortfolioItem(portfolioArr[i])
+  portfolioArr.forEach(function(portItem){
+    let portCard = new PortfolioItem(portItem)
     portCard.drawCard();
-  }
-}
+  })
+}//end of drawPorfolio fn
+
+
+// function drawPortolio(){
+//   for (let i in portfolioArr){
+//     let portCard = new PortfolioItem(portfolioArr[i])
+//     portCard.drawCard();
+//   }
+// }
+
