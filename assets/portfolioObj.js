@@ -123,6 +123,15 @@ var portfolioArr = [
     mobile: false,
     order: 100
   },
+  {
+    name: "Friend Finder",
+    synopsis: "You'll never guess who you could be friends with! You're just 10 survey questions away from a new bestie.",
+    image: "assets/images/friend-finder.jpg",
+    gitURL: "https://github.com/zkinsk/friendFinder",
+    siteURL: "https://friend-finder-sz-2.herokuapp.com/",
+    mobile: false,
+    order: 110
+  },
 ];
 
 
@@ -135,10 +144,4 @@ function drawPortolio(){
 }//end of drawPorfolio fn
 
 
-// function drawPortolio(){
-//   for (let i in portfolioArr){
-//     let portCard = new PortfolioItem(portfolioArr[i])
-//     portCard.drawCard();
-//   }
-// }
 
