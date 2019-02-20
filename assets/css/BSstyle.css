@@ -188,12 +188,14 @@ body{
         transform: translate(-50%, -50%);
         /* text-align: center; */
       }
+      /* .bTns {
+          position: relative;
+      } */
 
       .gitTag{
-          position: absolute;
-          transform: translate(-50%, -50%);
-          right: 0;
-          bottom: -30%;
+          position: relative;
+          left: 90%;
+          bottom: -5px;
           color: rgb(255, 140, 0);
       }
 

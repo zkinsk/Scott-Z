@@ -23,9 +23,9 @@ let PortfolioItem = function(obj){
       mobilebtn.attr({"type": "button", "data-url": this.siteURL}).text("Mobile");
       overlayButtonCol.append(mobilebtn);
     }
-    overlayButtonCol.append(buttonaTag);
+    overlayButtonCol.append(buttonaTag, overlayaTag);
     overlayButtonRow.append(overlayButtonCol);
-    cardBody.append(overlay.append(overlayaTag, overlayTitle, overlayText, overlayButtonRow));
+    cardBody.append(overlay.append(overlayTitle, overlayText, overlayButtonRow));
     cardCol.append(card.append(img, cardBody));
     $("#portfolioRow").append(cardCol);
   }
