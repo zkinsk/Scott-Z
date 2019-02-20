@@ -129,7 +129,7 @@ var portfolioArr = [
     image: "assets/images/friend-finder.jpg",
     gitURL: "https://github.com/zkinsk/friendFinder",
     siteURL: "https://friend-finder-sz-2.herokuapp.com/",
-    mobile: false,
+    mobile: true,
     order: 110
   },
 ];
