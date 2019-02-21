@@ -5,30 +5,33 @@ let PortfolioItem = function(obj){
   this.gitURL = obj.gitURL;
   this.siteURL = obj.siteURL;
   this.mobile = obj.mobile;
+
   this.drawCard = function(){
-    let cardCol = $("<div>").addClass("col-md-6 col-xl-4");
-    let card = $("<div>").addClass("card mb-2")
-    let img = $("<img>").addClass("card-img-top img-fluid").attr({"src": this.image, "alt": this.name})
-    let cardBody = $("<div>").addClass("card-body")
-    let overlay = $("<div>").addClass("cardOverlay");
-    let overlayaTag = $("<a>").addClass("gitTag").attr({"href": this.gitURL, "title": "github repository", "target": "_blank"});
-    overlayaTag.html(`<i class="fas fa-code"></i>`)
-    let overlayTitle = $("<h5>").addClass("card-title").text(this.name);
-    let overlayText = $("<p>").addClass("card-text").text(this.synopsis);
-    let overlayButtonRow = $("<div>").addClass("row justify-content-center");
-    let overlayButtonCol = $("<div>").addClass("col-12");
-    let buttonaTag = $("<a>").addClass("btn btn-success btn-block").attr({"href": this.siteURL,"target": "_blank", "role": "button", "aria-pressed": "true"}).text("Check It Out")
+  let buttons = /*html*/`<a class="btn btn-success btn-block" href="${this.siteURL}" target="_blank" role= "button" aria-pressed="true">Check It Out</a>`
     if (this.mobile){
-      let mobilebtn = $("<button>").addClass("btn btn-success btn-block modalProject mb-1 d-none d-md-block");
-      mobilebtn.attr({"type": "button", "data-url": this.siteURL}).text("Mobile");
-      overlayButtonCol.append(mobilebtn);
+      buttons += /*html*/ `<button class="btn btn-success btn-block modalProject mb-1 d-none d-md-block" type="button" data-url="${this.siteURL}">Mobile</button>`
     }
-    overlayButtonCol.append(buttonaTag, overlayaTag);
-    overlayButtonRow.append(overlayButtonCol);
-    cardBody.append(overlay.append(overlayTitle, overlayText, overlayButtonRow));
-    cardCol.append(card.append(img, cardBody));
+    let cardCol = /*html*/`
+    <div class="col-md-6 col-xl-4">
+      <div class="card mb-2">
+        <img class="card-img-top img-fluid" src="${this.image}" alt="${this.name}">
+        <div class="card-body">
+          <div class="cardOverlay">
+            <h5 class="card-title">${this.name}</h5>
+            <p class="card-text">${this.synopsis}</p>
+            <div class="row justify-content-center">
+              <div class="col-12">
+                ${buttons}
+                <a class="gitTag" href="${this.gitURL}" title="github repository" target="_blank"><i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    `
     $("#portfolioRow").append(cardCol);
-  }
+  } //end of draw card
 }//end portfolio constructor
 
 
