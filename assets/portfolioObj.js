@@ -83,7 +83,7 @@ var portfolioArr = [
   },
   {
     name: "Gif Viewer",
-    synopsis: "A nice teal and orange gif viewer using the Giphy API<",
+    synopsis: "A nice teal and orange gif viewer using the Giphy API.",
     image: "assets/images/mtb-Bike.gif",
     gitURL: "https://github.com/zkinsk/Giphy-HW",
     siteURL: "https://zkinsk.github.io/Giphy-HW/",
