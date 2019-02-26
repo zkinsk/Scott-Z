@@ -52,6 +52,7 @@ $(document).ready(function(){
   modalMonitor();
   clickButtons();
   $('.gitTag').tooltip({placement: "bottom"})
+  new WOW().init();
   // setTimeout(function(){objectTest()}, 2000)
 // end of doc ready
 })
