@@ -13,7 +13,7 @@ let PortfolioItem = function(obj){
     }
     let cardCol = /*html*/`
     <div class="col-md-6 col-xl-4">
-      <div class="card mb-2">
+      <div class="card mb-2 wow fadeInUp"data-wow-duration="1.2s" data-wow-offset="150">
         <img class="card-img-top img-fluid" src="${this.image}" alt="${this.name}">
         <div class="card-body">
           <div class="cardOverlay">
