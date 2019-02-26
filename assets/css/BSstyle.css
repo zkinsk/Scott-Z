@@ -232,5 +232,8 @@ body{
         #scootImg{
             width: 100%;
         }
+        .navbar{
+            padding-top: 20px;
+        }
     }
 /* end portfolio modal ----------------*/

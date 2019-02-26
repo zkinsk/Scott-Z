@@ -12,8 +12,8 @@ let PortfolioItem = function(obj){
       buttons += /*html*/ `<button class="btn btn-success btn-block modalProject mb-1 d-none d-md-block" type="button" data-url="${this.siteURL}">Mobile</button>`
     }
     let cardCol = /*html*/`
-    <div class="col-md-6 col-xl-4">
-      <div class="card mb-2 wow fadeInUp"data-wow-duration="1.2s" data-wow-offset="150">
+    <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="1.3" data-wow-offset="100">
+      <div class="card mb-4" >
         <img class="card-img-top img-fluid" src="${this.image}" alt="${this.name}">
         <div class="card-body">
           <div class="cardOverlay">
@@ -134,6 +134,15 @@ var portfolioArr = [
     siteURL: "https://friend-finder-sz-2.herokuapp.com/",
     mobile: true,
     order: 110
+  },
+  {
+    name: "Eat Dat Burger",
+    synopsis: "Create a Burger, Chomp a Burger and watch the database update!",
+    image: "assets/images/burger.gif",
+    gitURL: "https://github.com/zkinsk/burger",
+    siteURL: "https://burgerize-scz.herokuapp.com/",
+    mobile: true,
+    order: 120
   },
 ];
 
