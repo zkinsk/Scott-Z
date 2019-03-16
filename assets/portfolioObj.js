@@ -147,7 +147,7 @@ var portfolioArr = [
   {
     name: "Dogs Day Out",
     synopsis: "Chat with some folks, check out their dogs stats, and set up a play date!",
-    image: "assets/images/two-pugs-jpg",
+    image: "assets/images/two-pugs.jpg",
     gitURL: "https://github.com/zkinsk/project-2",
     siteURL: "https://dogs-day-out-2.herokuapp.com/",
     mobile: true,
