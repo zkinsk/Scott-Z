@@ -11,8 +11,10 @@ let PortfolioItem = function(obj){
     if (this.mobile){
       buttons += /*html*/ `<button class="btn btn-success btn-block modalProject mb-1 d-none d-md-block" type="button" data-url="${this.siteURL}">Mobile</button>`
     }
+    let wowDuration = ((Math.random()*2) + 2).toFixed(2);
+    console.log(wowDuration);
     let cardCol = /*html*/`
-    <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="1.3" data-wow-offset="100">
+    <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="${wowDuration}s" data-wow-offset="100">
       <div class="card mb-4" >
         <img class="card-img-top img-fluid" src="${this.image}" alt="${this.name}">
         <div class="card-body">
@@ -153,7 +155,30 @@ var portfolioArr = [
     mobile: true,
     order: 5
   },
-];
+];//end of portfolio objectArray
+
+cardOrder = {
+  dogsDayOut: {
+    name: "Dogs Day Out",
+    order: 10,
+  },
+  eatDatBurger: {
+    name: "Eat Dat Burger",
+    order: 70,
+  },
+  friendFinder: {
+    name: "Friend Finder", 
+    order: 30,
+  },
+  bAmazon: {
+    name: "bAmazon", 
+    order: 50
+  },
+  nodeWordGuess: {
+    name: "Node Word Guess", 
+    order: 40
+  }
+};
 
 
 function drawPortolio(){
