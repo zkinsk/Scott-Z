@@ -106,7 +106,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/Giphy-HW/",
     mobile: true,
     order: 40,
-    tech: ["AJAX", "Bootstrap", "jQuery"]
+    tech: ["AJAX & APIs", "Bootstrap", "jQuery"]
   },
   {
     name: "MultiPlayer Rock Paper Sissors",
@@ -156,7 +156,7 @@ var portfolioArr = [
     siteURL: "https://friend-finder-sz-2.herokuapp.com/",
     mobile: true,
     order: 110,
-    tech: ["nodeJS", "Heroku", "handlebars"]
+    tech: ["nodeJS", "Heroku", "express", "handlebars"]
   },
   {
     name: "Eat Dat Burger",
@@ -166,7 +166,7 @@ var portfolioArr = [
     siteURL: "https://burgerize-scz.herokuapp.com/",
     mobile: true,
     order: 120,
-    tech: ["ORM", "nodeJS", "handlebars"]
+    tech: ["ORM", "nodeJS", "express", "handlebars"]
   },
   {
     name: "Dogs Day Out",
@@ -176,7 +176,7 @@ var portfolioArr = [
     siteURL: "https://dogs-day-out-2.herokuapp.com/",
     mobile: true,
     order: 5,
-    tech: ["nodeJS", "sequelize", "AWS", "Heroku"]
+    tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku"]
   },
 ];//end of portfolio objectArray
 
