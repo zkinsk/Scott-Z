@@ -176,7 +176,7 @@ var portfolioArr = [
     siteURL: "https://dogs-day-out-2.herokuapp.com/",
     mobile: true,
     order: 5,
-    tech: ["nodeJS", "sequelize", "AWS"]
+    tech: ["nodeJS", "sequelize", "AWS", "Heroku"]
   },
 ];//end of portfolio objectArray
 

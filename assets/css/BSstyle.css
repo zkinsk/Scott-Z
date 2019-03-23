@@ -200,10 +200,12 @@ body{
       }
     .techList {
         position: absolute;
-        left: 0;
+        transform: translateX(-50%);
+        left: 50%;
         bottom: 0;
     }
     .techList p{
+        white-space: nowrap;
         cursor: pointer;
         box-sizing: border-box;
         display: inline;
@@ -228,7 +230,7 @@ body{
     }
 
     #socialLinks a{
-        font-size: 150%;
+        font-size: 2rem;
         color: rgb(255, 140, 0);
         padding: 5px 10px 0 10px;
 
