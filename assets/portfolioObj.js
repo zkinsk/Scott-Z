@@ -1,18 +1,25 @@
-let PortfolioItem = function(obj){
+const PortfolioItem = function(obj){
   this.name = obj.name;
   this.synopsis = obj.synopsis;
   this.image = obj.image;
   this.gitURL = obj.gitURL;
   this.siteURL = obj.siteURL;
   this.mobile = obj.mobile;
+  this.tech = obj.tech;
 
   this.drawCard = function(){
-  let buttons = /*html*/`<a class="btn btn-success btn-block" href="${this.siteURL}" target="_blank" role= "button" aria-pressed="true">Check It Out</a>`
+    let buttons = /*html*/`<a class="btn btn-success btn-block" href="${this.siteURL}" target="_blank" role= "button" aria-pressed="true">Check It Out</a>`
     if (this.mobile){
       buttons += /*html*/ `<button class="btn btn-success btn-block modalProject mb-1 d-none d-md-block" type="button" data-url="${this.siteURL}">Mobile</button>`
     }
     let wowDuration = ((Math.random()*2) + 2).toFixed(2);
-    console.log(wowDuration);
+    let techList = ""
+    this.tech.forEach(function(techItem){ // tech boxes
+      console.log(techItem);
+      techList += `<p title="Technology">${techItem}</p>`
+      // console.log(this.techList);
+    });
+    console.log('Draw Card', techList);
     let cardCol = /*html*/`
     <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="${wowDuration}s" data-wow-offset="100">
       <div class="card mb-4" >
@@ -27,6 +34,9 @@ let PortfolioItem = function(obj){
                 <a class="gitTag" href="${this.gitURL}" title="github repository" target="_blank"><i class="fas fa-code"></i></a>
               </div>
             </div>
+          </div>
+          <div class="techList">
+            ${techList}
           </div>
         </div>
       </div>
@@ -45,7 +55,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/Word-Guess-Game",
     siteURL: "https://zkinsk.github.io/Word-Guess-Game/",
     mobile: false,
-    order: 10
+    order: 10,
+    tech: ["HTML", "CSS", "Javascript"]
   },
   {
     name: "Crystals Collector",
@@ -54,7 +65,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/unit-4-gemgame",
     siteURL: "https://zkinsk.github.io/unit-4-gemgame/",
     mobile: false,
-    order: 70
+    order: 70,
+    tech: ["HTML", "CSS", "jQuery"]
   },
   {
     name: "Bike to Brew",
@@ -63,7 +75,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/BikeToBrew",
     siteURL: "https://zkinsk.github.io/BikeToBrew/",
     mobile: true,
-    order: 20
+    order: 20,
+    tech: ["Materialize", "AJAX & APIs", "jQuery"]
   },
   {
     name: "Star Wars RPG",
@@ -72,7 +85,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/unit-4-RPGgame",
     siteURL: "https://zkinsk.github.io/unit-4-RPGgame/",
     mobile: false,
-    order: 30
+    order: 30,
+    tech: ["HTML", "Bootstrap", "jQuery"]
   },
   {
     name: "Big Lebowski Trivia",
@@ -81,7 +95,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/TriviaGame",
     siteURL: "https://zkinsk.github.io/TriviaGame/",
     mobile: false,
-    order: 50
+    order: 50,
+    tech: ["HTML", "Bootstrap", "jQuery"]
   },
   {
     name: "Gif Viewer",
@@ -90,7 +105,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/Giphy-HW",
     siteURL: "https://zkinsk.github.io/Giphy-HW/",
     mobile: true,
-    order: 40
+    order: 40,
+    tech: ["AJAX", "Bootstrap", "jQuery"]
   },
   {
     name: "MultiPlayer Rock Paper Sissors",
@@ -99,7 +115,8 @@ var portfolioArr = [
     gitURL: "assets/images/RockPaperScissors.jpg",
     siteURL: "https://zkinsk.github.io/RPS-Multiplayer/",
     mobile: true,
-    order: 60
+    order: 60,
+    tech: ["Firebase", "jQuery", "Bootstrap"]
   },
   {
     name: "liriBot",
@@ -108,7 +125,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/liri-node-app",
     siteURL: "https://github.com/zkinsk/liri-node-app",
     mobile: false,
-    order: 80
+    order: 80,
+    tech: ["nodeJS", "AJAX"]
   },
   {
     name: "Node Word Guess",
@@ -117,7 +135,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/Constructor-WordGuess",
     siteURL: "https://github.com/zkinsk/Constructor-WordGuess",
     mobile: false,
-    order: 90
+    order: 90,
+    tech: ["Constructors", "nodeJS"]
   },
   {
     name: "bAmazon",
@@ -126,7 +145,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/bamazon",
     siteURL: "https://github.com/zkinsk/bamazon",
     mobile: false,
-    order: 100
+    order: 100,
+    tech: ["nodeJS", "mySQL"]
   },
   {
     name: "Friend Finder",
@@ -135,7 +155,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/friendFinder",
     siteURL: "https://friend-finder-sz-2.herokuapp.com/",
     mobile: true,
-    order: 110
+    order: 110,
+    tech: ["nodeJS", "Heroku", "handlebars"]
   },
   {
     name: "Eat Dat Burger",
@@ -144,7 +165,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/burger",
     siteURL: "https://burgerize-scz.herokuapp.com/",
     mobile: true,
-    order: 120
+    order: 120,
+    tech: ["ORM", "nodeJS", "handlebars"]
   },
   {
     name: "Dogs Day Out",
@@ -153,7 +175,8 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/project-2",
     siteURL: "https://dogs-day-out-2.herokuapp.com/",
     mobile: true,
-    order: 5
+    order: 5,
+    tech: ["nodeJS", "sequelize", "AWS"]
   },
 ];//end of portfolio objectArray
 
@@ -166,6 +189,10 @@ cardOrder = {
     name: "Eat Dat Burger",
     order: 70,
   },
+  bikeToBrew: {
+    name: "Bike to Brew",
+    order: 20
+  },
   friendFinder: {
     name: "Friend Finder", 
     order: 30,
@@ -177,6 +204,14 @@ cardOrder = {
   nodeWordGuess: {
     name: "Node Word Guess", 
     order: 40
+  },
+  bobRossWordGuess: {
+    name: "Bob Ross Word Guess",
+    order: 80,
+  },
+  crystalsCollector: {
+    name: "Crystals Collector",
+    order: 90,
   }
 };
 

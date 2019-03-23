@@ -55,7 +55,7 @@ body{
 /* about me----------------- */
     #pageName {
         height: 100px;
-        z-index: 50000;
+        z-index: 1021;
     }
     #pageName h2{
         background-color: white;
@@ -188,9 +188,9 @@ body{
         transform: translate(-50%, -50%);
         /* text-align: center; */
       }
-      /* .bTns {
-          position: relative;
-      } */
+      .cardOverlay .btn {
+        color: white;
+      }
 
       .gitTag{
           position: relative;
@@ -198,6 +198,21 @@ body{
           bottom: -5px;
           color: rgb(255, 140, 0);
       }
+    .techList {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .techList p{
+        cursor: pointer;
+        box-sizing: border-box;
+        display: inline;
+        padding: 0 0.2rem;
+        background-color: green;
+        margin: .2rem .1rem;
+        border: .2rem solid transparent;
+        border-radius: .2rem;
+    }
 
 /* END CARD CSS -------------------*/
 
