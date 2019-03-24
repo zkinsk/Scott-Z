@@ -159,13 +159,30 @@ body{
         display: block;
         width: 100%;
         height: auto;
-      }
+    }
+    .card-img-title{
+        font-size: 1em;
+        position: absolute;
+        transform: translate(-50% -50%);
+        top: 0.1rem;
+        right: 0.1rem;
+        color: white;
+        /* background-color: rgba(86, 86, 86, 0.489); */
+        background-color: rgba(0, 128, 0, 0.5);
+        border: 0.16rem solid transparent;
+        border-radius: 0.2rem;
+        /* text-shadow: 0 0 .1rem black; */
+    }
     .card:hover {
         background-color: #394552;
     }
     .card:hover .card-body {
         opacity: 1;
-      }
+    }
+    .card:hover .card-img-title{
+        color: transparent;
+        background-color: transparent;
+    }
     .card-body {
         position: absolute;
         top: 0;
@@ -203,6 +220,7 @@ body{
         transform: translateX(-50%);
         left: 50%;
         bottom: -0.3rem;
+        max-width: 100%;
     }
     .techList p{
         white-space: nowrap;

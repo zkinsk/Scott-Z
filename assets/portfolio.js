@@ -45,15 +45,19 @@ $("#contactModal").on("click", "#messageSend", function(){
       scrollTop: ($(scrollLoc).offset().top) - 320
     }, 3000,)
   });
-};
+};//end of click buttons
 
-$(document).ready(function(){
- drawPortolio();
-  modalMonitor();
-  clickButtons();
+function toolTipInitialization(){//initialize bootstrap tool tips
   $('.gitTag').tooltip({placement: "bottom"})
   $('.techList p').tooltip({placement: "top"})
+};//end of tool tip initialization
+
+$(document).ready(function(){
+  drawPortolio();
+  modalMonitor();
+  clickButtons();
+  toolTipInitialization();;
+
   new WOW().init();
-  // setTimeout(function(){objectTest()}, 2000)
 // end of doc ready
 })

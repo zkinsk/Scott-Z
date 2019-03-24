@@ -6,27 +6,26 @@ const PortfolioItem = function(obj){
   this.siteURL = obj.siteURL;
   this.mobile = obj.mobile;
   this.tech = obj.tech;
+  this.skip = obj.skip;
 
   this.drawCard = function(){
     let buttons = /*html*/`<a class="btn btn-success btn-block" href="${this.siteURL}" target="_blank" role= "button" aria-pressed="true">Check It Out</a>`
     if (this.mobile){
       buttons += /*html*/ `<button class="btn btn-success btn-block modalProject mb-1 d-none d-md-block" type="button" data-url="${this.siteURL}">Mobile</button>`
     }
-    let wowDuration = ((Math.random()*2) + 2).toFixed(2);
+    let wowDuration = ((Math.random()*2) + 1.0).toFixed(2);
     let techList = ""
     this.tech.forEach(function(techItem){ // tech boxes
-      console.log(techItem);
       techList += `<p title="Technology">${techItem}</p>`
-      // console.log(this.techList);
     });
-    console.log('Draw Card', techList);
     let cardCol = /*html*/`
     <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="${wowDuration}s" data-wow-offset="100">
       <div class="card mb-4" >
         <img class="card-img-top img-fluid" src="${this.image}" alt="${this.name}">
+        <h5 class="card-img-title">${this.name}</h5>
         <div class="card-body">
           <div class="cardOverlay">
-            <h5 class="card-title">${this.name}</h5>
+            <h5 class="card-title"><strong>${this.name}</strong></h5>
             <p class="card-text">${this.synopsis}</p>
             <div class="row justify-content-center">
               <div class="col-12">
@@ -56,6 +55,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/Word-Guess-Game/",
     mobile: false,
     order: 10,
+    skip: false,
     tech: ["HTML", "CSS", "Javascript"]
   },
   {
@@ -66,6 +66,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/unit-4-gemgame/",
     mobile: false,
     order: 70,
+    skip: true,
     tech: ["HTML", "CSS", "jQuery"]
   },
   {
@@ -76,6 +77,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/BikeToBrew/",
     mobile: true,
     order: 20,
+    skip: false,
     tech: ["Materialize", "AJAX & APIs", "jQuery"]
   },
   {
@@ -86,6 +88,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/unit-4-RPGgame/",
     mobile: false,
     order: 30,
+    skip: false,
     tech: ["HTML", "Bootstrap", "jQuery"]
   },
   {
@@ -96,6 +99,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/TriviaGame/",
     mobile: false,
     order: 50,
+    skip: false,
     tech: ["HTML", "Bootstrap", "jQuery"]
   },
   {
@@ -106,6 +110,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/Giphy-HW/",
     mobile: true,
     order: 40,
+    skip: false,
     tech: ["AJAX & APIs", "Bootstrap", "jQuery"]
   },
   {
@@ -116,6 +121,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/RPS-Multiplayer/",
     mobile: true,
     order: 60,
+    skip: false,
     tech: ["Firebase", "jQuery", "Bootstrap"]
   },
   {
@@ -126,6 +132,7 @@ var portfolioArr = [
     siteURL: "https://github.com/zkinsk/liri-node-app",
     mobile: false,
     order: 80,
+    skip: true,
     tech: ["nodeJS", "AJAX"]
   },
   {
@@ -136,6 +143,7 @@ var portfolioArr = [
     siteURL: "https://github.com/zkinsk/Constructor-WordGuess",
     mobile: false,
     order: 90,
+    skip: true,
     tech: ["Constructors", "nodeJS"]
   },
   {
@@ -146,7 +154,8 @@ var portfolioArr = [
     siteURL: "https://github.com/zkinsk/bamazon",
     mobile: false,
     order: 100,
-    tech: ["nodeJS", "mySQL"]
+    skip: true,
+    tech: ["nodeJS", "mySQL"],
   },
   {
     name: "Friend Finder",
@@ -156,6 +165,7 @@ var portfolioArr = [
     siteURL: "https://friend-finder-sz-2.herokuapp.com/",
     mobile: true,
     order: 110,
+    skip: false,
     tech: ["nodeJS", "Heroku", "express", "handlebars"]
   },
   {
@@ -166,6 +176,7 @@ var portfolioArr = [
     siteURL: "https://burgerize-scz.herokuapp.com/",
     mobile: true,
     order: 120,
+    skip: false,
     tech: ["ORM", "nodeJS", "express", "handlebars"]
   },
   {
@@ -176,52 +187,20 @@ var portfolioArr = [
     siteURL: "https://dogs-day-out-2.herokuapp.com/",
     mobile: true,
     order: 5,
-    tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku"]
+    skip: false,
+    tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku", "Bulma"]
   },
 ];//end of portfolio objectArray
-
-cardOrder = {
-  dogsDayOut: {
-    name: "Dogs Day Out",
-    order: 10,
-  },
-  eatDatBurger: {
-    name: "Eat Dat Burger",
-    order: 70,
-  },
-  bikeToBrew: {
-    name: "Bike to Brew",
-    order: 20
-  },
-  friendFinder: {
-    name: "Friend Finder", 
-    order: 30,
-  },
-  bAmazon: {
-    name: "bAmazon", 
-    order: 50
-  },
-  nodeWordGuess: {
-    name: "Node Word Guess", 
-    order: 40
-  },
-  bobRossWordGuess: {
-    name: "Bob Ross Word Guess",
-    order: 80,
-  },
-  crystalsCollector: {
-    name: "Crystals Collector",
-    order: 90,
-  }
-};
 
 
 function drawPortolio(){
   portfolioArr.sort(function(a, b){return a.order - b.order})
   portfolioArr.forEach(function(portItem){
     let portCard = new PortfolioItem(portItem)
-    portCard.drawCard();
-  })
+    if (!portCard.skip){
+      portCard.drawCard();
+    }
+  });
 }//end of drawPorfolio fn
 
 
