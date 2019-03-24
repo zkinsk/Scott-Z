@@ -84,8 +84,9 @@ body{
     #aboutMe p:first-of-type {
         margin-top: 10px
     }
-    #aboutMe p {
-        padding: 0 10px;
+    #aboutMe p,
+    #aboutMe h5 {
+        padding: 0.6em 0.6em;
     }
     #scootImg{
         width: 300px;
@@ -287,6 +288,10 @@ body{
         }
         #portfolioModalContent p:last-child {
             margin-bottom: 1rem;
+        }
+        .modal-header,
+        .modal-footer {
+            background-color: green;
         }
     /* end about me portion of portfolio modal */
 

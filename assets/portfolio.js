@@ -48,7 +48,8 @@ $("#contactModal").on("click", "#messageSend", function(){
 
   $("#scootImg").click(function(){
     $("#portfolioModalContent").empty();
-    $("#portfolioModalContent").append(aboutMe);
+    let modalBody = $("<div>").addClass("modal-body").html(aboutMe);
+    $("#portfolioModalContent").append(modalHeader, modalBody, modalFooter);
     $("#porfolioModal").modal();
   })//end of scootImg
 };//end of click buttons
