@@ -16,7 +16,9 @@ const PortfolioItem = function(obj){
     let wowDuration = ((Math.random()*2) + 1.0).toFixed(2);
     let techList = ""
     this.tech.forEach(function(techItem){ // tech boxes
-      techList += `<p title="Technology">${techItem}</p>`
+      if(techItem !== "BREAK"){
+        techList += `<p title="Technology">${techItem}</p>`
+      }else{techList += '</br>'}
     });
     let cardCol = /*html*/`
     <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="${wowDuration}s" data-wow-offset="100">
@@ -49,7 +51,7 @@ const PortfolioItem = function(obj){
 var portfolioArr = [
   {
     name: "Bob Ross Word Guess",
-    synopsis: "Hangman styled word guess game with an homage to Bob Ross and his Happy Little Trees",
+    synopsis: "Hangman styled word guess game with an homage to Bob Ross and his Happy Little Trees.",
     image: "assets/images/bob-ross_header.jpg",
     gitURL: "https://github.com/zkinsk/Word-Guess-Game",
     siteURL: "https://zkinsk.github.io/Word-Guess-Game/",
@@ -188,7 +190,7 @@ var portfolioArr = [
     mobile: true,
     order: 5,
     skip: false,
-    tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku", "Bulma"]
+    tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku", "BREAK", "Bulma", "Handlebars"]
   },
 ];//end of portfolio objectArray
 
