@@ -45,11 +45,17 @@ $("#contactModal").on("click", "#messageSend", function(){
       scrollTop: ($(scrollLoc).offset().top) - 320
     }, 3000,)
   });
+
+  $("#scootImg").click(function(){
+    $("#portfolioModalContent").empty();
+    $("#portfolioModalContent").append(aboutMe);
+    $("#porfolioModal").modal();
+  })//end of scootImg
 };//end of click buttons
 
 function toolTipInitialization(){//initialize bootstrap tool tips
   $('.gitTag').tooltip({placement: "bottom"})
-  $('.techList p').tooltip({placement: "top"})
+  $('.techList p, #scootImg').tooltip({placement: "top"})
 };//end of tool tip initialization
 
 $(document).ready(function(){

@@ -89,6 +89,14 @@ body{
     }
     #scootImg{
         width: 300px;
+        cursor: pointer;
+        
+    }
+    #scootImg:hover {
+        transform: scale (1.1, 1.1);
+        width: 301px;
+        transition: 0.5s;
+        opacity: 0.6;
     }
 /* end about me----------------- */
 
@@ -219,9 +227,10 @@ body{
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
-        bottom: -0.3rem;
+        bottom: -0.8rem;
         max-width: 100%;
         text-align: center;
+        line-height: 2.1rem;
     }
     .techList p{
         white-space: nowrap;
@@ -257,7 +266,7 @@ body{
     #socialLinks a:hover {
         transition: 0.3s;
         font-size: 2.1em;
-        color: red;
+        color: green;
     }
 /* end footer ------------- */
 
@@ -268,6 +277,18 @@ body{
     iframe{
         height: 650px;
     }
+
+    /* about me portion of portfolio modal */
+        #portfolioModalContent p{
+            padding: 0 1rem;
+        }
+        #portfolioModalContent p:first-child {
+            margin-top: 1rem;
+        }
+        #portfolioModalContent p:last-child {
+            margin-bottom: 1rem;
+        }
+    /* end about me portion of portfolio modal */
 
     @media only screen and (max-width: 767px) {
         #scootImg{
