@@ -13,3 +13,31 @@ const aboutMe =`
 <p>Currently I am a land surveyor who sits behind a desk. I take subdivision designs from engineers and translate those designs into actual infrastructure on and in the ground. I am usually the first person in years to walk through a big piece of property. Then after we have subdivided the land, installed all the infrastructure and built the house, I am often the last person to leave before the new homeowner unlocks the front door.</p>
 
 <p>Now I am involved in a University of Richmond Full Stack Coding Boot Camp and I love it. I am excited to learn new technologies and apply them.  The process is fantastic, learn a tech, apply it immediately in an activity or assignment and see the reults on the spot. I love plugging through javascript, splitting functions to add new features, building objects to contain functionality and solving process puzzles. It is changing the way I think!</p>`;
+
+const myCoding = `
+<h5>
+I am a full stack developer in Richmond Va who feels equally at home working at either end of the MERN Stack.</br></br>
+I have a passion for writing clean and clear code that is easy to maintain. </br></br>
+My skills on the front end include: HTML, CSS(& various libraries), SASS, javascript, jQuery and Handlebars.</br></br>
+On the back end I have experience with: nodeJs, Express, Express Handlebars, mySQL, Sequelize, Mongo, Mongoose, and React. </br></br>
+</h5>
+`
+
+const modalHeader = `
+<div class="modal-header">
+</div>
+`;
+
+const modalFooter = `
+<div class="modal-footer">
+</div>
+`;
+
+function writeMyDetails(){
+// $("#aboutMe").append(aboutMe);
+$("#aboutMe").append(myCoding);
+}//end my details
+
+$(document).ready(function(){
+  writeMyDetails()
+})
