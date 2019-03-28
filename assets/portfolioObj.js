@@ -1,24 +1,26 @@
-const PortfolioItem = function(obj){
-  this.name = obj.name;
-  this.synopsis = obj.synopsis;
-  this.image = obj.image;
-  this.gitURL = obj.gitURL;
-  this.siteURL = obj.siteURL;
-  this.mobile = obj.mobile;
-  this.tech = obj.tech;
-  this.skip = obj.skip;
+class PortfolioItem {
+ constructor(obj){
+   this.name = obj.name;
+   this.synopsis = obj.synopsis;
+   this.image = obj.image;
+   this.gitURL = obj.gitURL;
+   this.siteURL = obj.siteURL;
+   this.mobile = obj.mobile;
+   this.tech = obj.tech;
+   this.skip = obj.skip;
+ }
 
-  this.drawCard = function(){
+  drawCard = function(){
     let buttons = /*html*/`<a class="btn btn-success btn-block" href="${this.siteURL}" target="_blank" role= "button" aria-pressed="true">Check It Out</a>`
     if (this.mobile){
-      buttons += /*html*/ `<button class="btn btn-success btn-block modalProject mb-1 d-none d-md-block" type="button" data-url="${this.siteURL}">Mobile</button>`
+      buttons += /*html*/ `<button class="btn btn-success btn-block modalProject mb-0 d-none d-md-block" type="button" data-url="${this.siteURL}">Mobile</button>`
     }
     let wowDuration = ((Math.random()*2) + 1.0).toFixed(2);
     let techList = ""
     this.tech.forEach(function(techItem){ // tech boxes
-      if(techItem !== "BREAK"){
+      if(techItem !== "</br>"){
         techList += `<p title="Technology">${techItem}</p>`
-      }else{techList += '</br>'}
+      }else{techList += techItem}
     });
     let cardCol = /*html*/`
     <div class="col-md-6 col-xl-4 wow fadeInUp" data-wow-duration="${wowDuration}s" data-wow-offset="100">
@@ -179,7 +181,7 @@ var portfolioArr = [
     mobile: true,
     order: 120,
     skip: false,
-    tech: ["ORM", "nodeJS", "express", "handlebars"]
+    tech: ["ORM", "mySQL", "nodeJS", "express", "handlebars"]
   },
   {
     name: "Dogs Day Out",
@@ -190,7 +192,7 @@ var portfolioArr = [
     mobile: true,
     order: 5,
     skip: false,
-    tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku", "BREAK", "Bulma", "Handlebars"]
+    tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku", "</br>", "Bulma", "Handlebars"]
   },
 ];//end of portfolio objectArray
 
