@@ -289,9 +289,9 @@ body{
         #portfolioModalContent p:last-child {
             margin-bottom: 1rem;
         }
-        .modal-header,
-        .modal-footer {
-            background-color: green;
+        .modal-header.about-me,
+        .modal-footer.about-me{
+            background-color: rgba(0, 128, 0, 0.454);
         }
     /* end about me portion of portfolio modal */
 

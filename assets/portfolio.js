@@ -13,6 +13,7 @@ var messageDB = database.ref("/messages");
 
 function modalMonitor(){
   $("#portfolioRow").on("click", ".modalProject", function(){
+    $("#about-me-modal").removeClass("modal-dialog-scrollable");
     $("#portfolioModalContent").empty();
     let projUrl = $(this).attr("data-url")
     let frame = $("<iframe>").attr({"src": projUrl, "allow": "geolocation"})
@@ -47,6 +48,7 @@ $("#contactModal").on("click", "#messageSend", function(){
   });
 
   $("#scootImg").click(function(){
+    $("#about-me-modal").addClass("modal-dialog-scrollable");
     $("#portfolioModalContent").empty();
     let modalBody = $("<div>").addClass("modal-body").html(aboutMe);
     $("#portfolioModalContent").append(modalHeader, modalBody, modalFooter);
