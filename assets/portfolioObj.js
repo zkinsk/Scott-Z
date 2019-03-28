@@ -53,12 +53,12 @@ class PortfolioItem {
 var portfolioArr = [
   {
     name: "Bob Ross Word Guess",
-    synopsis: "Hangman styled word guess game with an homage to Bob Ross and his Happy Little Trees.",
+    synopsis: "Hangman styled word guess game with an homage to Bob Ross and his Happy Little Trees... Also my first ever code and not mobile ready",
     image: "assets/images/bob-ross_header.jpg",
     gitURL: "https://github.com/zkinsk/Word-Guess-Game",
     siteURL: "https://zkinsk.github.io/Word-Guess-Game/",
     mobile: false,
-    order: 10,
+    order: 200,
     skip: false,
     tech: ["HTML", "CSS", "Javascript"]
   },
@@ -80,7 +80,7 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/BikeToBrew",
     siteURL: "https://zkinsk.github.io/BikeToBrew/",
     mobile: true,
-    order: 20,
+    order: 30,
     skip: false,
     tech: ["Materialize", "AJAX & APIs", "jQuery"]
   },
@@ -91,7 +91,7 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/unit-4-RPGgame",
     siteURL: "https://zkinsk.github.io/unit-4-RPGgame/",
     mobile: false,
-    order: 30,
+    order: 60,
     skip: false,
     tech: ["HTML", "Bootstrap", "jQuery"]
   },
@@ -113,7 +113,7 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/Giphy-HW",
     siteURL: "https://zkinsk.github.io/Giphy-HW/",
     mobile: true,
-    order: 40,
+    order: 20,
     skip: false,
     tech: ["AJAX & APIs", "Bootstrap", "jQuery"]
   },
@@ -124,7 +124,7 @@ var portfolioArr = [
     gitURL: "assets/images/RockPaperScissors.jpg",
     siteURL: "https://zkinsk.github.io/RPS-Multiplayer/",
     mobile: true,
-    order: 60,
+    order: 40,
     skip: false,
     tech: ["Firebase", "jQuery", "Bootstrap"]
   },
@@ -190,7 +190,7 @@ var portfolioArr = [
     gitURL: "https://github.com/zkinsk/project-2",
     siteURL: "https://dogs-day-out-2.herokuapp.com/",
     mobile: true,
-    order: 5,
+    order: 10,
     skip: false,
     tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku", "</br>", "Bulma", "Handlebars"]
   },

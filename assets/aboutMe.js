@@ -16,11 +16,11 @@ const aboutMe =`
 
 const myCoding = `
 <h5>
-I am a full stack developer in Richmond Va who feels equally at home working at either end of the MERN Stack.</br></br>
-I have a passion for writing clean and clear code that is easy to maintain. </br></br>
-My skills on the front end include: HTML, CSS(& various libraries), SASS, javascript, jQuery and Handlebars.</br></br>
-On the back end I have experience with: nodeJs, Express, Express Handlebars, mySQL, Sequelize, Mongo, Mongoose, and React. </br></br>
-I am also well versed in version control using Github. 
+  I am a full stack developer in Richmond Va who feels equally at home working at either end of the MERN Stack.</br></br>
+  I have a passion for writing clean and clear code that is easy to maintain. </br></br>
+  My skills on the front end include: HTML, CSS(& various libraries), SASS, javascript, jQuery and Handlebars.</br></br>
+  On the back end I have experience with: nodeJs, Express, Express Handlebars, mySQL, Sequelize, Mongo, Mongoose, and React. </br></br>
+  I am also well versed in version control using Github. 
 </h5>
 `
 
