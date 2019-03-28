@@ -198,8 +198,8 @@ var portfolioArr = [
 
 
 function drawPortolio(){
-  portfolioArr.sort(function(a, b){return a.order - b.order})
-  portfolioArr.forEach(function(portItem){
+  portfolioArr.sort((a, b) => a.order - b.order)
+  portfolioArr.forEach(portItem => {
     let portCard = new PortfolioItem(portItem)
     if (!portCard.skip){
       portCard.drawCard();
