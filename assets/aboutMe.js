@@ -38,7 +38,6 @@ const modalFooter = `
 `;
 
 function writeMyDetails(){
-// $("#aboutMe").append(aboutMe);
 $("#aboutMe").append(myCoding);
 }//end my details
 

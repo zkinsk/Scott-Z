@@ -293,6 +293,9 @@ body{
         .modal-footer.about-me{
             background-color: rgba(0, 128, 0, 0.454);
         }
+        .close span {
+            font-size: 1.8em;
+        }
     /* end about me portion of portfolio modal */
 
     @media only screen and (max-width: 767px) {
