@@ -4,4 +4,4 @@ This is my person portfolio showcasing the projects that I have worked on for th
 
 It is built using HTML, CSS, Bootstrap, Javascript, Jquery and has a connection to Firebase for collecting any messages folks may want to send me. 
 
-#### Now includes a class for portolio items that is used to build each card for my site.
+### Now includes a class for portolio items that is used to build each card for my site.
