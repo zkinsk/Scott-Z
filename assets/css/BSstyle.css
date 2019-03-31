@@ -113,7 +113,7 @@ body{
 
 /* begin parrallax 1 */
 
-    #pLax-1 {
+    #pLax-1::before{
         background-image: url(../images/Lost-Riv-Pan.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
