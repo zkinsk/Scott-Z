@@ -52,6 +52,14 @@ body{
     }
 /* end button css ------------- */
 
+/* *****************
+container */
+
+    .container-fluid {
+        background-color: #3a4147
+    }
+
+
 /* about me----------------- */
     #pageName {
         height: 100px;
