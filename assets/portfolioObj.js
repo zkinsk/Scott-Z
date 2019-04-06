@@ -205,6 +205,17 @@ var portfolioArr = [
     skip: false,
     tech: ["nodeJS", "express", "sequelize", "AWS", "Heroku", "</br>", "Bulma", "Handlebars"]
   },
+  {
+    name: "Steven React",
+    synopsis: "Simple Steven Universe Memory Game - Built with React",
+    image: "assets/images/garnet-fusion.gif",
+    gitURL: "https://github.com/zkinsk/react-memory-game",
+    siteURL: "https://young-sierra-70479.herokuapp.com/",
+    mobile: true,
+    order: 1,
+    skip: false,
+    tech: ["React", "Bootstrap"]
+  },
 ];//end of portfolio objectArray
 
 
