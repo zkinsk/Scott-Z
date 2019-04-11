@@ -52,6 +52,7 @@ $("#contactModal").on("click", "#messageSend", function(){
     $("#portfolioModalContent").empty();
     let modalBody = $("<div>").addClass("modal-body").html(aboutMe);
     $("#portfolioModalContent").append(modalHeader, modalBody, modalFooter);
+    $(".tooltip").remove();
     $("#porfolioModal").modal();
   })//end of scootImg
 };//end of click buttons
