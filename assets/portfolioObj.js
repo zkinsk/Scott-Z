@@ -52,6 +52,17 @@ class PortfolioItem {
 
 var portfolioArr = [
   {
+    name: "Google Books Search",
+    synopsis: "React running on a Node.js server hitting google books API and saving data to Mongo DB - What more it there to say? ",
+    image: "assets/images/winesburg-ohio.jpg",
+    gitURL: "https://github.com/zkinsk/books-search",
+    siteURL: "https://enigmatic-cliffs-12223.herokuapp.com/",
+    mobile: true,
+    order: 1,
+    skip: false,
+    tech: ["Mongo", "Mongoose", "NodeJs","Express", "</br>", "Axios", "React"]
+  },
+  {
     name: "Scrape This",
     synopsis: "Mongo DB, Axios and Cheerio working together to scrape you some data",
     image: "assets/images/single-track.jpg",
