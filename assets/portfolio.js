@@ -1,3 +1,4 @@
+"use strict"; 
 var config = {
   apiKey: "AIzaSyBJDXzudh6eMwDmTWJ-FHAUayeHrHYVTMg",
   authDomain: "contact-me-a1f91.firebaseapp.com",
@@ -63,7 +64,6 @@ function toolTipInitialization(){//initialize bootstrap tool tips
 };//end of tool tip initialization
 
 $(document).ready(function(){
-  drawPortolio();
   modalMonitor();
   clickButtons();
   toolTipInitialization();;

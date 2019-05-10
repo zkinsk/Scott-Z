@@ -1,4 +1,4 @@
-
+"use strict"; 
 const aboutMe =`
 <p>I am a family man, father of two. My wife and I work together to raise two of my favorite people in the world to spend time with.</p>
 

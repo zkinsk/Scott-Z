@@ -1,5 +1,5 @@
-class PortfolioItem {
- constructor(obj){
+"use strict"; 
+const PortfolioItem = function(obj) {
    this.name = obj.name;
    this.synopsis = obj.synopsis;
    this.image = obj.image;
@@ -8,9 +8,8 @@ class PortfolioItem {
    this.mobile = obj.mobile;
    this.tech = obj.tech;
    this.skip = obj.skip;
- }
 
-  drawCard = function(){
+  this.drawCard = function(){
     let buttons = /*html*/`<a class="btn btn-success btn-block" href="${this.siteURL}" target="_blank" role= "button" aria-pressed="true">Check It Out</a>`
     if (this.mobile){
       buttons += /*html*/ `<button class="btn btn-success btn-block modalProject mb-0 d-none d-md-block" type="button" data-url="${this.siteURL}">Mobile</button>`
@@ -45,15 +44,15 @@ class PortfolioItem {
       </div>
     </div>
     `
-    $("#portfolioRow").append(cardCol);
-  } //end of draw card
-}//end portfolio constructor
+    $("#portfolioRow").append(cardCol)
+  }; //end of draw card
+};//end portfolio constructor
 
 
 var portfolioArr = [
   {
     name: "Google Books Search",
-    synopsis: "React running on a Node.js server hitting google books API and saving data to Mongo DB - What more it there to say? ",
+    synopsis: "React running with a Node.js server hitting google books API and saving data to Mongo DB - What more it there to say? ",
     image: "assets/images/winesburg-ohio.jpg",
     gitURL: "https://github.com/zkinsk/books-search",
     siteURL: "https://enigmatic-cliffs-12223.herokuapp.com/",
@@ -230,7 +229,7 @@ var portfolioArr = [
 ];//end of portfolio objectArray
 
 
-function drawPortolio(){
+function drawPortfolio(){
   portfolioArr.sort((a, b) => a.order - b.order)
   portfolioArr.forEach(portItem => {
     let portCard = new PortfolioItem(portItem)
@@ -241,4 +240,6 @@ function drawPortolio(){
 }//end of drawPorfolio fn
 
 
-
+$(document).ready(function(){
+  drawPortfolio()
+})
