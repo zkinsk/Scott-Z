@@ -51,6 +51,17 @@ const PortfolioItem = function(obj) {
 
 var portfolioArr = [
   {
+    name: "Client Invoice Form",
+    synopsis: "Form for client invoice remittance",
+    image: "assets/images/payment-form-sq.jpg",
+    gitURL: "https://github.com/zkinsk/portfolio",
+    siteURL: "https://safe-river-75201.herokuapp.com/",
+    mobile: true,
+    order: 30,
+    skip: false,
+    tech: ["React", "Axios"]
+  },
+  {
     name: "Google Books Search",
     synopsis: "React running with a Node.js server hitting google books API and saving data to Mongo DB - What more it there to say? ",
     image: "assets/images/winesburg-ohio.jpg",
@@ -91,7 +102,7 @@ var portfolioArr = [
     siteURL: "https://zkinsk.github.io/unit-4-gemgame/",
     mobile: false,
     order: 70,
-    skip: true,
+    skip: false,
     tech: ["HTML", "CSS", "jQuery"]
   },
   {
@@ -157,7 +168,7 @@ var portfolioArr = [
     siteURL: "https://github.com/zkinsk/liri-node-app",
     mobile: false,
     order: 80,
-    skip: true,
+    skip: false,
     tech: ["nodeJS", "AJAX"]
   },
   {
@@ -168,7 +179,7 @@ var portfolioArr = [
     siteURL: "https://github.com/zkinsk/Constructor-WordGuess",
     mobile: false,
     order: 90,
-    skip: true,
+    skip: false,
     tech: ["Constructors", "nodeJS"]
   },
   {
@@ -179,7 +190,7 @@ var portfolioArr = [
     siteURL: "https://github.com/zkinsk/bamazon",
     mobile: false,
     order: 100,
-    skip: true,
+    skip: false,
     tech: ["nodeJS", "mySQL"],
   },
   {
@@ -199,7 +210,7 @@ var portfolioArr = [
     image: "assets/images/burger.gif",
     gitURL: "https://github.com/zkinsk/burger",
     siteURL: "https://burgerize-scz.herokuapp.com/",
-    mobile: true,
+    mobile: false,
     order: 120,
     skip: false,
     tech: ["ORM", "mySQL", "nodeJS", "express", "handlebars"]
