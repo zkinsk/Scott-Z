@@ -3,7 +3,9 @@ page background color: #3a4147
 content & card background color: #2d3237
 */
 
-
+body, html{
+    min-height: 100vh;
+}
 
 body{
     /* font-family: "arial", "Helvetica Neue", Arial, Helvetica, sans-serif; */
