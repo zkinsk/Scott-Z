@@ -12,7 +12,7 @@ class PortfolioItem {
 		this.order = obj.order;
 	}
 
-	drawCard = function() {
+	drawCard() {
 		let buttons = /*html*/ `<a class="btn btn-success btn-block" href="${this
 			.siteURL}" target="_blank" role= "button" aria-pressed="true">Check It Out</a>`;
 		if (this.mobile) {
@@ -62,7 +62,7 @@ class PortfolioItem {
     </div>
     `;
 		$('#portfolioRow').append(cardCol);
-	}; //end of draw card
+	} //end of draw card
 } //end portfolio class
 
 var portfolioArr = [
